@@ -47,6 +47,10 @@ TxtRotate.prototype.tick = function() {
             that.tick();
         }, delta);
     }
+    else{
+        this.el.innerHTML = '<span class="wrap" id="warpp"><a href=letter.html>'+this.txt+'</a></span>';
+
+    }
 };
 
 window.onload = function() {
@@ -63,7 +67,7 @@ window.onload = function() {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.0em solid #666 }";
+  css.innerHTML = ".txt-rotate > .wrap {text-align: center; border-right: 0.0em solid #666 }";
   document.body.appendChild(css);
 };
 
